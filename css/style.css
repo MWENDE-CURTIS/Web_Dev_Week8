@@ -1,0 +1,170 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+main {
+    padding: 20px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Home Hero */
+.hero {
+    background: url('https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center/cover;
+    text-align: center;
+    padding: 100px 20px;
+    color: #fff;
+    max-width: 100%;
+}
+
+.cta {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* About */
+.about-content {
+    display: flex;
+    gap: 20px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.about-content img {
+    max-width: 100%;
+    width: 50%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Projects */
+.project-grid {
+    display: flex;
+    gap: 20px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.project-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    min-width: 0;
+}
+
+.project-card img {
+    max-width: 100%;
+    width: 50%;
+    height: auto;
+}
+
+/* Contact */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact input, .contact textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.contact button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #333;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .about-content, .project-grid {
+        flex-direction: column;
+    }
+
+    .about-content img {
+        max-width: 100%;
+        width: 50%;
+        height: auto;
+    }
+}

@@ -33,4 +33,4 @@ Built with HTML5 semantics (<header>, <main>, <footer>), CSS for styling/respons
 - Relative Paths: All links/scripts use relative URLs.
 
 ## Part 4: Deployment
-Deployed via Netifly. 
+Deployed via Netlify. 
